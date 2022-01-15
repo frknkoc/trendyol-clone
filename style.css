@@ -23,7 +23,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background: rgb(207, 207, 207);
+    background: var(--color);
     border-radius: 5rem;
 }
 
@@ -41,14 +41,36 @@ html::-webkit-scrollbar-thumb{
     cursor: pointer;
 }
 
-.nav-link{
+.nuserlink{
     color: rgb(88, 88, 88);
 }
 
-.nav-link:hover{
+.userlink:hover{
     color: var(--color);
 }
 
+.logo{
+    width: 50%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .swiper-slide img {
+    width: 100%;  
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid rgb(179, 179, 179);
+  }
 
 .newcol-8{
     border: 1px solid white;
@@ -73,5 +95,57 @@ html::-webkit-scrollbar-thumb{
     font-size: 14px;
     font-weight: 400;
     border-radius: 0 0 10px 10px;
+}
+
+.col4{
+    border: 1px solid white;
+    border-radius: 10px;
+    background: rgb(32, 32, 32);
+}
+
+.col4 > img{
+    border-radius: 10px 10px 0 0; 
+}
+
+.col4:hover{
+    border: 1px solid var(--color);
+    background-color: var(--color);
+}
+
+.col4-detail{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 0 0 10px 10px;
+}
+
+.footerlink{
+    color: rgba(255, 255, 255, 0.5);
+}
+.footerlink:hover{
+    color: white;
+}
+
+@media (max-width:991px){
+    .logo{
+        width: 40%;
+    }
+}
+
+@media (max-width:768px){
+    .logo{
+        width: 30%;
+    }
+
+    .form{
+        margin-top: 10px;
+    }
+
+    .headerlink{
+        font-size: 10px;
+    }
 }
 
